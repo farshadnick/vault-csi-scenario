@@ -38,7 +38,11 @@ echo $K8S_SECRET
 
 ![image](https://github.com/user-attachments/assets/d0f06359-6cd8-4f0c-ab46-61fde601691e)
 
+## Kubernetes CA 
 ![image](https://github.com/user-attachments/assets/201940e1-2b9e-4d2a-8104-3c7d8e057210)
+## TOKEN 
+![image](https://github.com/user-attachments/assets/1f02139c-e096-4793-bc21-4ade6ba34e33)
+
 ![image](https://github.com/user-attachments/assets/55658981-875f-4aa1-a6a6-16e39bc74bf2)
 
 # 3-Create a Secret in Vault
