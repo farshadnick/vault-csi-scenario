@@ -46,9 +46,11 @@ echo $K8S_SECRET
 ![image](https://github.com/user-attachments/assets/55658981-875f-4aa1-a6a6-16e39bc74bf2)
 
 # 3-Create a Secret in Vault
+```
 vault secrets enable -path=/secret kv
 vault kv put secret/db-pass pwd="admin@123"
 vault kv get secret/db-pass
+```
 # 3-1 Create Policy for Accessing to that secret
 ```
 vault policy write internal-app - <<EOF
@@ -90,14 +92,14 @@ helm install vault hashicorp/vault \
     --set "csi.enabled=true"
 
 ```
-5- Create Secret Provider Class to point to your secret on vault 
+# 5- Create Secret Provider Class to point to your secret on vault 
 ```
 kubectl apply -f spc-crd-vault.yaml
 kubectl api-resources | grep -i secret
 kubectl get secretproviderclasses
 kubectl describe secretproviderclasses vault-database
 ```
-6- Create pod that Mount to Your secret on Kubernetes
+# 6- Create pod that Mount to Your secret on Kubernetes
 ```
 kubectl apply -f  webapp.yaml
 ```
