@@ -1,0 +1,13 @@
+apiVersion: secrets-store.csi.x-k8s.io/v1
+kind: SecretProviderClass
+metadata:
+  name: vault-database
+spec:
+  provider: vault
+  parameters:
+    vaultAddress: "http://192.168.6.150:8200"
+    roleName: "database"
+    objects: |
+      - objectName: "db-password"
+        secretPath: "secret/data/db-pass"
+        secretKey: "pwd"
