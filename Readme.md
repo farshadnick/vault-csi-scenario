@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/eb233f90-2038-452b-aab4-ecd39a640aba)
+
 # 1- Install SecretAccount for Vault
 ```
 kubectl apply -f sa-valut.yaml
