@@ -18,7 +18,7 @@ kubectl get secret vault-auth-secret
 export VAULT_ADDR=http://192.168.6.150:8200
 # enter your Vault's Root Token
 vault login  
-vault auth enable Kubernetes
+vault auth enable kubernetes
 ```
 
 # 2-2 we need kubernetes CA , Token and kubernetes API URL
