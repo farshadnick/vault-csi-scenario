@@ -56,7 +56,7 @@ vault kv get secret/db-pass
 # 3-1 Create Policy for Accessing to that secret
 ```
 vault policy write internal-app - <<EOF
-path "secret/db-pass" {
+path "secret/data/db-pass" {
   capabilities = ["read"]
 }
 EOF
